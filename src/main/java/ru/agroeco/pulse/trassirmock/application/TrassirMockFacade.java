@@ -3,7 +3,7 @@ package ru.agroeco.pulse.trassirmock.application;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import ru.agroeco.pulse.trassirmock.catalog.ObjectCatalogService;
-import ru.agroeco.pulse/trassirmock/catalog/TrassirObject;
+import ru.agroeco.pulse.trassirmock.catalog.TrassirObject;
 import ru.agroeco.pulse.trassirmock.config.MockProperties;
 import ru.agroeco.pulse.trassirmock.events.EventQueryService;
 import ru.agroeco.pulse.trassirmock.events.TrassirEvent;
