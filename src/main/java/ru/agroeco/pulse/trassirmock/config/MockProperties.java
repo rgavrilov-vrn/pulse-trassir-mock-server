@@ -2,6 +2,7 @@ package ru.agroeco.pulse.trassirmock.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+
 import java.time.Duration;
 
 @Data

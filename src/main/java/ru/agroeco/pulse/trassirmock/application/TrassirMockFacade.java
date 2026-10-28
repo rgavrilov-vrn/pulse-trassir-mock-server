@@ -1,7 +1,8 @@
 package ru.agroeco.pulse.trassirmock.application;
 
-import ru.agroeco.pulse.trassirmock.catalog.TrassirObject;
+import org.springframework.stereotype.Service;
 import ru.agroeco.pulse.trassirmock.catalog.ObjectCatalogService;
+import ru.agroeco.pulse.trassirmock.catalog.TrassirObject;
 import ru.agroeco.pulse.trassirmock.config.MockProperties;
 import ru.agroeco.pulse.trassirmock.events.EventQueryService;
 import ru.agroeco.pulse.trassirmock.events.TrassirEvent;
@@ -11,8 +12,6 @@ import ru.agroeco.pulse.trassirmock.session.SessionService;
 
 import java.util.List;
 
-import org.springframework.stereotype.Service;
-
 @Service
 public class TrassirMockFacade {
     private final SessionService sessionService;
@@ -21,10 +20,10 @@ public class TrassirMockFacade {
     private final MockProperties properties;
 
     public TrassirMockFacade(
-        SessionService sessionService,
-        ObjectCatalogService objectCatalogService,
-        EventQueryService eventQueryService,
-        MockProperties properties
+            SessionService sessionService,
+            ObjectCatalogService objectCatalogService,
+            EventQueryService eventQueryService,
+            MockProperties properties
     ) {
         this.sessionService = sessionService;
         this.objectCatalogService = objectCatalogService;

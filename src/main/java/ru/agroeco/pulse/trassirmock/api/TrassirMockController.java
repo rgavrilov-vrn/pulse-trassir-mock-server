@@ -9,6 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import ru.agroeco.pulse.trassirmock.application.TrassirMockFacade;
@@ -17,6 +18,7 @@ import java.util.List;
 
 @Tag(name = "TRASSIR Mock API", description = "Mock TRASSIR SDK endpoints")
 @RestController
+@RequestMapping("/api/v1/trassirmock")
 public class TrassirMockController {
     private final TrassirMockFacade facade;
 

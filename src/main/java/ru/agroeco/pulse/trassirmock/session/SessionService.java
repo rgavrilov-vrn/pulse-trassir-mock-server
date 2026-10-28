@@ -25,7 +25,7 @@ public class SessionService {
     public Session requireActive(SessionId id) {
         repository.deleteExpired(clock.instant());
         return repository.findById(id)
-            .filter(session -> session.isActive(clock.instant()))
-            .orElseThrow(() -> new SessionNotFoundException(id));
+                .filter(session -> session.isActive(clock.instant()))
+                .orElseThrow(() -> new SessionNotFoundException(id));
     }
 }

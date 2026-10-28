@@ -13,12 +13,12 @@ public class MockExceptionHandler {
     @ExceptionHandler(SessionNotFoundException.class)
     public ResponseEntity<ProblemDetail> handleSessionNotFound(SessionNotFoundException exception) {
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
-            .body(ProblemDetail.forStatusAndDetail(HttpStatus.UNAUTHORIZED, exception.getMessage()));
+                .body(ProblemDetail.forStatusAndDetail(HttpStatus.UNAUTHORIZED, exception.getMessage()));
     }
 
     @ExceptionHandler(TrassirMockFacade.InvalidPasswordException.class)
     public ResponseEntity<ProblemDetail> handleInvalidPassword(TrassirMockFacade.InvalidPasswordException exception) {
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
-            .body(ProblemDetail.forStatusAndDetail(HttpStatus.UNAUTHORIZED, exception.getMessage()));
+                .body(ProblemDetail.forStatusAndDetail(HttpStatus.UNAUTHORIZED, exception.getMessage()));
     }
 }
