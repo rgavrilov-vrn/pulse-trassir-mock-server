@@ -1,35 +1,24 @@
 package ru.agroeco.pulse.trassirmock.application;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import ru.agroeco.pulse.trassirmock.catalog.ObjectCatalogService;
-import ru.agroeco.pulse.trassirmock.catalog.TrassirObject;
+import ru.agroeco.pulse/trassirmock/catalog/TrassirObject;
 import ru.agroeco.pulse.trassirmock.config.MockProperties;
 import ru.agroeco.pulse.trassirmock.events.EventQueryService;
 import ru.agroeco.pulse.trassirmock.events.TrassirEvent;
 import ru.agroeco.pulse.trassirmock.session.Session;
 import ru.agroeco.pulse.trassirmock.session.SessionId;
 import ru.agroeco.pulse.trassirmock.session.SessionService;
-
 import java.util.List;
 
 @Service
+@RequiredArgsConstructor
 public class TrassirMockFacade {
     private final SessionService sessionService;
     private final ObjectCatalogService objectCatalogService;
     private final EventQueryService eventQueryService;
     private final MockProperties properties;
-
-    public TrassirMockFacade(
-            SessionService sessionService,
-            ObjectCatalogService objectCatalogService,
-            EventQueryService eventQueryService,
-            MockProperties properties
-    ) {
-        this.sessionService = sessionService;
-        this.objectCatalogService = objectCatalogService;
-        this.eventQueryService = eventQueryService;
-        this.properties = properties;
-    }
 
     public SessionId login(String password) {
         if (!properties.getSdkPassword().equals(password)) {
