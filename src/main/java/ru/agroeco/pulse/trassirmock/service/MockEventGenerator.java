@@ -1,11 +1,11 @@
-package ru.pulse.trassirmock.service;
+package ru.agroeco.pulse.trassirmock.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
-import ru.pulse.trassirmock.config.MockProperties;
-import ru.pulse.trassirmock.model.MockEvent;
+import ru.agroeco.pulse.trassirmock.config.MockProperties;
+import ru.agroeco.pulse.trassirmock.model.MockEvent;
 import java.time.Instant;
 import java.util.concurrent.ThreadLocalRandom;
 

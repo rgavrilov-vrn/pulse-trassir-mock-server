@@ -1,7 +1,7 @@
-package ru.pulse.trassirmock.service;
+package ru.agroeco.pulse.trassirmock.service;
 
 import org.springframework.stereotype.Component;
-import ru.pulse.trassirmock.model.MockEvent;
+import ru.agroeco.pulse.trassirmock.model.MockEvent;
 import java.time.Instant;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;

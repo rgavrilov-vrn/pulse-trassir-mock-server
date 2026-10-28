@@ -1,4 +1,4 @@
-package ru.pulse.trassirmock.controller;
+package ru.agroeco.pulse.trassirmock.controller;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -6,10 +6,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import ru.pulse.trassirmock.config.MockProperties;
-import ru.pulse.trassirmock.model.MockEvent;
-import ru.pulse.trassirmock.model.MockObject;
-import ru.pulse.trassirmock.service.MockTrassirState;
+import ru.agroeco.pulse.trassirmock.config.MockProperties;
+import ru.agroeco.pulse.trassirmock.model.MockEvent;
+import ru.agroeco.pulse.trassirmock.model.MockObject;
+import ru.agroeco.pulse.trassirmock.service.MockTrassirState;
 import java.util.List;
 
 @Slf4j

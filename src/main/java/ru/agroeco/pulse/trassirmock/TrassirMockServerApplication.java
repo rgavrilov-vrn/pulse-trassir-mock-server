@@ -1,4 +1,4 @@
-package ru.pulse.trassirmock;
+package ru.agroeco.pulse.trassirmock;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

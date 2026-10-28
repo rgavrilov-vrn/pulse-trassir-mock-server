@@ -1,4 +1,4 @@
-package ru.pulse.trassirmock.model;
+package ru.agroeco.pulse.trassirmock.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

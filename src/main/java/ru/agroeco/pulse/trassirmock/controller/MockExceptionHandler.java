@@ -1,4 +1,4 @@
-package ru.pulse.trassirmock.controller;
+package ru.agroeco.pulse.trassirmock.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ProblemDetail;
