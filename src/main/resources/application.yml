@@ -15,5 +15,23 @@ trassir:
     sdk-password: mock-sdk-password
     session-ttl: PT30M
     max-events-per-response: 100
+
     generate-events: true
     event-generation-interval: PT1S
+    event-generation-jitter: PT5S
+
+    event-types:
+      - CONNECTION_LOST
+      - CONNECTION_ESTABLISHED
+      - LOGIN_SUCCESS
+      - LOGIN_FAILED
+
+    login-users:
+      - admin
+      - КРО
+      - Administrator
+
+    login-ips:
+      - 10.50.5.174
+      - 10.10.11.185
+      - 10.10.13.144
