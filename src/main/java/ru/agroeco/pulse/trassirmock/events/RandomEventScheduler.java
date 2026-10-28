@@ -4,6 +4,7 @@ import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.scheduling.TaskScheduler;
 import org.springframework.stereotype.Component;
+import ru.agroeco.pulse.trassirmock.config.MockProperties;
 
 import java.time.Duration;
 import java.time.Instant;

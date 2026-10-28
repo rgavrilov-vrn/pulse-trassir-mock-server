@@ -35,3 +35,11 @@ trassir:
       - 10.50.5.174
       - 10.10.11.185
       - 10.10.13.144
+spring:
+  output:
+    ansi:
+      enabled: always
+
+logging:
+  pattern:
+    console: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(${PID:- }){magenta} --- [%t] %clr(%logger{36}){cyan} : %m%n%wEx"
