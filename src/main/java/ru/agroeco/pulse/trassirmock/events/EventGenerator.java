@@ -1,11 +1,13 @@
 package ru.agroeco.pulse.trassirmock.events;
 
+import org.springframework.stereotype.Service;
 import ru.agroeco.pulse.trassirmock.config.MockProperties;
 
 import java.time.Clock;
 import java.time.Instant;
 import java.util.concurrent.ThreadLocalRandom;
 
+@Service
 public class EventGenerator {
     private static final String CAMERA_GUID = "QhSW4hj2";
     private static final String SERVER_GUID = "tkcbkSr1";
@@ -32,8 +34,8 @@ public class EventGenerator {
             case 1 -> TrassirEvent.loginSuccess(now, SERVER_GUID, "КРО", "10.10.11.185");
             case 2 -> TrassirEvent.loginFailed(now, SERVER_GUID, "Administrator", "10.10.13.144");
             default -> variant % 2 == 0
-                    ? TrassirEvent.connectionLost(now, CAMERA_GUID)
-                    : TrassirEvent.connectionEstablished(now, CAMERA_GUID);
+                ? TrassirEvent.connectionLost(now, CAMERA_GUID)
+                : TrassirEvent.connectionEstablished(now, CAMERA_GUID);
         };
 
         eventStore.append(event);
